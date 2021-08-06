@@ -1,0 +1,54 @@
+@import '../variables.scss';
+
+.main {
+  font-family: $font-family;
+  position: relative;
+  height: 100vh;
+  // background-color: green;
+  margin: 0 3rem;
+
+  &--skills-wrapper {
+    max-width: 300px;
+    max-height: 400px;
+    text-align: center;
+    display: block;
+    margin: 2rem auto;
+    border: 1px solid $color-blue;
+    border-radius: 25px;
+    box-shadow: 0.85rem 0.85rem 0.85rem rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7);
+    }
+
+    h2 {
+      font-weight: $font-heavy;
+    }
+
+    button {
+      position: relative;
+      font-weight: $font-light;
+      background-color: transparent;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid $color-blue;
+      color: $color-blue;
+      border-radius: none;
+      margin: 0rem 0.35rem 2rem 0.35rem;
+      overflow: hidden;
+      @include link-effect;
+    }
+  }
+
+  &--img-wrapper {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    img {
+      max-height: 9rem;
+      max-width: 9rem;
+    }
+  }
+}

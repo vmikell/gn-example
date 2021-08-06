@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+header {
+  margin: 0;
+  padding: 0;
+  background-color: $color-blue;
+  
+  img {
+    margin: 1.5rem;
+    max-width: 10rem;
+
+  }
+}
